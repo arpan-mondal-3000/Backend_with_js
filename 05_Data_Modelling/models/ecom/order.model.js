@@ -15,7 +15,7 @@ const orderSchema = new mongoose.Schema(
   {
     orderPrice: {
       type: Number,
-      required: True,
+      required: true,
     },
     customer: {
       type: mongoose.Schema.Types.ObjectId,
@@ -31,7 +31,7 @@ const orderSchema = new mongoose.Schema(
     },
     status: {
       type: String,
-      // If we want to restrict the status string to an few choices of strings then we can use th enum property and can use an array to specift the choices
+      // If we want to restrict the status string to an few choices of strings then we can use th enum property and can use an array to specify the choices
       enum: ["PENDING", "CANCELLED", "DELIVERED"],
       default: "PENDING",
     },
