@@ -29,6 +29,7 @@ const app = express();
 // To import dotenv like this we have to change the run script in package.json to use the experimental features
 import dotenv from "dotenv";
 import connectDB from "./db/index.js";
+import { app } from "./app.js";
 
 dotenv.config({ path: "./env" });
 

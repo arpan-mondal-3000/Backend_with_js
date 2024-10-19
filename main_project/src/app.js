@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 
-app = express();
+const app = express();
 
 // Use the app.use() method to set up configurations for the app using middlewares
 
